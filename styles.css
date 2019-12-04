@@ -13,3 +13,21 @@ h1 {
   width: 500px;
   margin: 10px auto;
 }
+
+#gallery div {
+  width: 200px;
+  float: left;
+  margin: 0 40px 20px 0;
+  padding: 15px;
+  text-align: center;
+
+  transition: background 0.5 ease;
+}
+
+#gallery div:nth-child(even) {
+  margin-right: 0;
+}
+
+#gallery div:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
