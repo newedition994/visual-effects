@@ -73,3 +73,15 @@ $("#invert input").onchange = function() {
 
 $("#invert input").value = 20;
 $("#invert input").onchange();
+
+// Saturate
+
+$("#saturate input").onchange = function() {
+  var img = $("#saturate img");
+  img.style.webkitFilter = "saturate(" + this.value + "%" + ")";
+
+  var heading = $("#saturate h3");
+  heading.textContent = "saturate(" + this.value + "%)";
+};
+$("#saturate input").value = 300;
+$("#saturate input").onchange();
