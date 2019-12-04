@@ -85,3 +85,44 @@ $("#saturate input").onchange = function() {
 };
 $("#saturate input").value = 300;
 $("#saturate input").onchange();
+
+// Sepia
+
+$("#sepia input").onchange = function() {
+  var img = $("#sepia img");
+  img.style.webkitFilter = "sepia(" + this.value + ")";
+
+  var heading = $("#sepia h3");
+  heading.textContent = "sepia(" + this.value + ")";
+};
+
+$("#sepia input").value = 0.6;
+$("#sepia input").onchange();
+
+// Opacity
+
+$("#opacity input").onchange = function() {
+  var img = $("#opacity img");
+  img.style.webkitFilter = "opacity(" + this.value + ")";
+
+  var heading = $("#opacity h3");
+  heading.textContent = "opacity(" + this.value + ")";
+};
+
+$("#opacity input").value = 0.4;
+$("#opacity input").onchange();
+
+// Drop Shadow
+
+$("#dropshadow input").onchange = function() {
+  var img = $("#dropshadow img");
+  img.style.webkitFilter =
+    "drop-shadow(" + this.value + "px " + this.value + "px 15px white)";
+
+  var heading = $("#dropshadow h3");
+  heading.textContent =
+    "drop-shadow(" + this.value + "px " + this.value + "px 15px white)";
+};
+
+$("#dropshadow input").value = 5;
+$("#dropshadow input").onchange();
