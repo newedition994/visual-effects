@@ -49,3 +49,15 @@ $("#grayscale input").onchange = function() {
 
 $("#grayscale input").value = 0.7;
 $("#grayscale input").onchange();
+
+// Hue Rotate
+$("#huerotate input").onchange = function() {
+  var img = $("#huerotate img");
+  img.style.webkitFilter = "hue-rotate(" + this.value + "deg" + ")";
+
+  var heading = $("#huerotate h3");
+  heading.textContent = "hue-rotate(" + this.value + "deg" + ")";
+};
+
+$("#huerotate input").value = 120;
+$("#huerotate input").onchange();
