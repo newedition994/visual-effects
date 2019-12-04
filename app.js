@@ -24,3 +24,16 @@ $("#brightness input").onchange = function() {
 
 $("#brightness input").value = 30;
 $("#brightness input").onchange();
+
+// Contrast
+
+$("#contrast input").onchange = function() {
+  var img = $("#contrast img");
+  img.style.webkitFilter = "contrast(" + this.value + "%" + ")";
+
+  var heading = $("#contrast h3");
+  heading.textContent = "contrast(" + this.value + "%)";
+};
+
+$("#contrast input").value = 500;
+$("#contrast input").onchange();
