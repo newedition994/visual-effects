@@ -1,0 +1,15 @@
+body {
+  padding: 20px;
+  background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/debut_dark.png);
+}
+
+h1 {
+  color: #ecff5e;
+  text-align: center;
+  font-size: 24px;
+}
+
+#gallery {
+  width: 500px;
+  margin: 10px auto;
+}
