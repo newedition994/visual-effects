@@ -61,3 +61,15 @@ $("#huerotate input").onchange = function() {
 
 $("#huerotate input").value = 120;
 $("#huerotate input").onchange();
+
+// Brightness
+$("#invert input").onchange = function() {
+  var img = $("#invert img");
+  img.style.webkitFilter = "invert(" + this.value + "%" + ")";
+
+  var heading = $("#invert h3");
+  heading.textContent = "invert(" + this.value + "%)";
+};
+
+$("#invert input").value = 20;
+$("#invert input").onchange();
