@@ -46,3 +46,6 @@ $("#grayscale input").onchange = function() {
   var heading = $("#grayscale h3");
   heading.textContent = "grayscale(" + this.value + ")";
 };
+
+$("#grayscale input").value = 0.7;
+$("#grayscale input").onchange();
