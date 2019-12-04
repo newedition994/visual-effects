@@ -21,9 +21,8 @@ h1 {
   padding: 15px;
   text-align: center;
 
-  transition: background 0.5 ease;
+  transition: background 0.5s ease;
 }
-
 #gallery div:nth-child(even) {
   margin-right: 0;
 }
@@ -36,7 +35,6 @@ h1 {
   color: #dbdbdb;
   font-size: 16px;
 }
-
 #gallery div:hover h3 {
   color: #ecff5e;
 }

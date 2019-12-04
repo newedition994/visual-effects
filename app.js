@@ -37,3 +37,12 @@ $("#contrast input").onchange = function() {
 
 $("#contrast input").value = 500;
 $("#contrast input").onchange();
+
+// GrayScale
+$("#grayscale input").onchange = function() {
+  var img = $("#grayscale img");
+  img.style.webkitFilter = "grayscale(" + this.value + ")";
+
+  var heading = $("#grayscale h3");
+  heading.textContent = "grayscale(" + this.value + ")";
+};
