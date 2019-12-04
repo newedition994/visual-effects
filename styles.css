@@ -31,3 +31,26 @@ h1 {
 #gallery div:hover {
   background: rgba(0, 0, 0, 0.3);
 }
+
+#gallery h3 {
+  color: #dbdbdb;
+  font-size: 16px;
+}
+
+#gallery div:hover h3 {
+  color: #ecff5e;
+}
+
+#gallery img {
+  vertical-align: middle;
+}
+
+#gallery input {
+  margin-top: 20px;
+  width: 100%;
+}
+
+#gallery p {
+  color: #fff;
+  font-size: 12px;
+}
